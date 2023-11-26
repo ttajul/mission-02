@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Website</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>About Me</h2>
+            <p id="bio">I am a passionate developer learning HTML, CSS, and JavaScript. Feel free to explore my page!</p>
+            <button onclick="changeBio()">Change Bio</button>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul id="skillList">
+                <!-- Skills will be dynamically added here -->
+            </ul>
+            <button onclick="addSkill()">Add Skill</button>
+        </section>
+        
+
+        <section id="square">
+            <h2>Calculate Square</h2>
+            <button onclick="displaySquare()">Display Square</button>
+            <p id="squareResult"></p>
+        </section>
+
+ 
+</body>
+</html>
