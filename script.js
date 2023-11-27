@@ -1,13 +1,16 @@
 let bioText = "I am a passionate developer learning HTML, CSS, and JavaScript.";
 
+        function changeBio() {
+            const newBioInput = document.getElementById("newBioInput");
+            const newBio = newBioInput.value;
 
-function changeBio() {
-    const newBio = prompt("Enter your new bio:");
-    if (newBio) {
-        bioText = newBio;
-        document.getElementById("bio").innerText = bioText;
-    }
-}
+            if (newBio) {
+                bioText = newBio;
+                document.getElementById("bio").innerText = bioText;
+                // Optionally, clear the input field after updating the bio
+                newBioInput.value = "";
+            }
+        }
 
  // Initialize an array to store skills
  const skillsArray = ['HTML', 'CSS', 'JavaScript'];
@@ -32,7 +35,7 @@ function changeBio() {
  updateSkills();
 
  function addSkill() {
-     const skillName = prompt("Enter a new skill:");
+    let skillName = prompt("Enter a new skill:");
      if (skillName) {
          // Add the new skill to the skillsArray
          skillsArray.push(skillName);
